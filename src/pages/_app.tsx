@@ -1,9 +1,62 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import '../styles/global.css';
 
 import type { AppProps } from 'next/app';
+import localFont from 'next/font/local';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-);
+const neueMachina = localFont({
+  src: [
+    {
+      path: '../fonts/NeueMachina-Light.otf',
+      weight: '300',
+      style: 'light',
+    },
+    {
+      path: '../fonts/NeueMachina-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/NeueMachina-UltraBold.otf',
+      weight: '700',
+      style: 'bold',
+    },
+  ],
+});
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  return (
+    <div className={neueMachina.className}>
+      <Component {...pageProps} />{' '}
+    </div>
+  );
+};
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'swiper-container': SwiperProps;
+      'swiper-slide': SwiperProps;
+    }
+  }
+}
+
+interface SwiperProps
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLElement>,
+    HTMLElement
+  > {
+  class?: string;
+  children?: any;
+  pagination?: string;
+  effect?: string;
+  'grab-cursor'?: string;
+  'centered-slides'?: string;
+  'slides-per-view'?: string;
+  'coverflow-effect-rotate'?: string;
+  'coverflow-effect-stretch'?: string;
+  'coverflow-effect-depth'?: string;
+  'coverflow-effect-modifier'?: string;
+}
 
 export default MyApp;

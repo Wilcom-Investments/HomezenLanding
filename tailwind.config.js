@@ -16,6 +16,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: '#F39F90',
+        background: {
+          300: 'rgba(48, 68, 80, 1)',
+        },
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
