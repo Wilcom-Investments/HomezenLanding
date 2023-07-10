@@ -2,31 +2,32 @@
 import '../styles/global.css';
 
 import type { AppProps } from 'next/app';
-import localFont from 'next/font/local';
 
-const neueMachina = localFont({
-  src: [
-    {
-      path: '../../public/fonts/NeueMachina-Light.otf',
-      weight: '300',
-      style: 'light',
-    },
-    {
-      path: '../../public/fonts/NeueMachina-Regular.otf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/NeueMachina-UltraBold.otf',
-      weight: '700',
-      style: 'bold',
-    },
-  ],
-});
+// const neueMachina = localFont({
+//   src: [
+//     {
+//       path: '../../public/fonts/NeueMachina-Light.otf',
+//       weight: '300',
+//       style: 'light',
+//     },
+//     {
+//       path: '../../public/fonts/NeueMachina-Regular.otf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//     {
+//       path: '../../public/fonts/NeueMachina-UltraBold.otf',
+//       weight: '700',
+//       style: 'bold',
+//     },
+//   ],
+// });
+
+// neueMachina.className
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className={neueMachina.className}>
+    <div>
       <Component {...pageProps} />{' '}
     </div>
   );
