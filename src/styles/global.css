@@ -1,5 +1,15 @@
 @tailwind base;
 
+/* @font-face {
+  font-family: NeueMachina-Ultrabold;
+  src: url('/fonts/NeueMachina-Ultrabold.oft');
+  font-weight: bold;
+}
+
+html {
+  font-family: NeueMachina-Ultrabold;
+} */
+
 a {
   @apply text-blue-700;
 }

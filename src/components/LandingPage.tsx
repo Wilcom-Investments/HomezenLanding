@@ -24,7 +24,7 @@ const LandingPage = () => {
 
   return (
     <section className="flex flex-col px-5 py-10 lg:h-screen lg:flex-row lg:flex-wrap lg:items-center lg:pb-32">
-      <div className="mx-auto flex h-full w-full max-w-[354px] flex-col items-center justify-center text-center lg:ml-16 lg:h-full lg:items-start lg:text-left xl:ml-32">
+      <div className="mx-auto flex h-full w-full max-w-[354px] flex-col items-center justify-center text-center lg:ml-16 lg:h-full lg:basis-1/2 lg:items-start lg:text-left xl:ml-32">
         <Image
           src={`${router.basePath}/assets/images/homezen-logo.png`}
           width={212}
@@ -159,31 +159,24 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="hidden flex-row items-center gap-10 lg:mr-16 lg:flex">
-        <Image
-          priority
-          src={`${router.basePath}/assets/images/screen.png`}
-          width={141}
-          height={296}
-          alt="Screen 1"
-          className="mx-auto h-fit w-full max-w-[141px]"
-        />
-        <Image
-          priority
-          src={`${router.basePath}/assets/images/screen2.png`}
-          width={204}
-          height={428}
-          alt="Screen 2"
-          className="mx-auto h-fit w-full max-w-[428px]"
-        />
-        <Image
-          priority
-          src={`${router.basePath}/assets/images/screen3.png`}
-          width={141}
-          height={296}
-          alt="Screen 3"
-          className="mx-auto h-fit w-full max-w-[131px]"
-        />
+      <div className="hidden lg:flex lg:basis-1/2">
+        <div className="mr-16 flex w-full flex-row items-center gap-10">
+          <img
+            src={`${router.basePath}/assets/images/screen.png`}
+            alt="Screen 1"
+            className="mx-auto h-fit w-full max-w-[141px]"
+          />
+          <img
+            src={`${router.basePath}/assets/images/screen2.png`}
+            alt="Screen 2"
+            className="mx-auto h-fit w-full max-w-[204px]"
+          />
+          <img
+            src={`${router.basePath}/assets/images/screen3.png`}
+            alt="Screen 3"
+            className="mx-auto h-fit w-full max-w-[141px]"
+          />
+        </div>
       </div>
       <div className="mb-24 hidden basis-full justify-center lg:flex">
         <div className="hidden h-5 items-center justify-start gap-6 lg:inline-flex">
@@ -214,25 +207,32 @@ const LandingPage = () => {
             </svg>
           </div>
           <div className="relative h-5 w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 21 20"
+            <a
+              href="https://twitter.com/homezen_uk"
+              target="_blank"
+              className="group text-white transition-all hover:text-primary"
             >
-              <g clipPath="url(#a)">
-                <path
-                  stroke="#F4F5F4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.796 2.5a9.082 9.082 0 0 1-2.617 1.275 3.733 3.733 0 0 0-6.55 2.5v.833a8.883 8.883 0 0 1-7.5-3.775s-3.333 7.5 4.167 10.834a9.7 9.7 0 0 1-5.834 1.666c7.5 4.167 16.667 0 16.667-9.583 0-.232-.023-.464-.067-.692A6.433 6.433 0 0 0 19.796 2.5Z"
-                />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M.629 0h20v20h-20z" />
-                </clipPath>
-              </defs>
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 20"
+                className="transition-all group-hover:scale-125"
+              >
+                <g clipPath="url(#a)">
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.796 2.5a9.082 9.082 0 0 1-2.617 1.275 3.733 3.733 0 0 0-6.55 2.5v.833a8.883 8.883 0 0 1-7.5-3.775s-3.333 7.5 4.167 10.834a9.7 9.7 0 0 1-5.834 1.666c7.5 4.167 16.667 0 16.667-9.583 0-.232-.023-.464-.067-.692A6.433 6.433 0 0 0 19.796 2.5Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="currentColor" d="M.629 0h20v20h-20z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
