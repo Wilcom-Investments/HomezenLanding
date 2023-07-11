@@ -7,17 +7,17 @@ import localFont from 'next/font/local';
 const neueMachina = localFont({
   src: [
     {
-      path: '../fonts/NeueMachina-Light.otf',
+      path: '/fonts/NeueMachina-Light.otf',
       weight: '300',
       style: 'light',
     },
     {
-      path: '../fonts/NeueMachina-Regular.otf',
+      path: '/fonts/NeueMachina-Regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/NeueMachina-UltraBold.otf',
+      path: '/fonts/NeueMachina-UltraBold.otf',
       weight: '700',
       style: 'bold',
     },
