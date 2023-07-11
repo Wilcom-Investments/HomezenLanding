@@ -30,7 +30,7 @@ const LandingPage = () => {
           width={212}
           height={43}
           alt="Homezen"
-          className="mx-auto mb-7 w-auto lg:ml-0 lg:mr-auto"
+          className="mx-auto mb-7 w-auto max-w-[150px] lg:ml-0 lg:mr-auto lg:max-w-none"
         />
         <h1 className="mb-3 text-5xl leading-tight">
           Property Data

@@ -2,31 +2,13 @@
 import '../styles/global.css';
 
 import type { AppProps } from 'next/app';
-import localFont from 'next/font/local';
+import { Space_Grotesk } from 'next/font/google';
 
-const neueMachina = localFont({
-  src: [
-    {
-      path: '/fonts/NeueMachina-Light.otf',
-      weight: '300',
-      style: 'light',
-    },
-    {
-      path: '/fonts/NeueMachina-Regular.otf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '/fonts/NeueMachina-UltraBold.otf',
-      weight: '700',
-      style: 'bold',
-    },
-  ],
-});
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className={neueMachina.className}>
+    <div className={spaceGrotesk.className}>
       <Component {...pageProps} />{' '}
     </div>
   );
