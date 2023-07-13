@@ -110,7 +110,7 @@ const LandingPage = () => {
         </div>
 
         <div className="inline-flex h-5 items-center justify-start gap-6 lg:hidden">
-          <div className="relative h-5 w-5">
+        <div className="relative h-5 w-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -123,39 +123,52 @@ const LandingPage = () => {
             </svg>
           </div>
           <div className="relative h-5 w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 21 20"
+            <a
+              href="https://www.facebook.com/HomezenUK"
+              target="_blank"
+              className="group text-white transition-all hover:text-primary"
             >
-              <path
-                stroke="#F4F5F4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.629 1.667h-2.5a4.167 4.167 0 0 0-4.167 4.166v2.5h-2.5v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.334h-3.333v-2.5A.833.833 0 0 1 13.129 5h2.5V1.667Z"
-              />
-            </svg>
-          </div>
-          <div className="relative h-5 w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 21 20"
-            >
-              <g clipPath="url(#a)">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 21 20"
+              >
                 <path
                   stroke="#F4F5F4"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M19.796 2.5a9.082 9.082 0 0 1-2.617 1.275 3.733 3.733 0 0 0-6.55 2.5v.833a8.883 8.883 0 0 1-7.5-3.775s-3.333 7.5 4.167 10.834a9.7 9.7 0 0 1-5.834 1.666c7.5 4.167 16.667 0 16.667-9.583 0-.232-.023-.464-.067-.692A6.433 6.433 0 0 0 19.796 2.5Z"
+                  d="M15.629 1.667h-2.5a4.167 4.167 0 0 0-4.167 4.166v2.5h-2.5v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.334h-3.333v-2.5A.833.833 0 0 1 13.129 5h2.5V1.667Z"
                 />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M.629 0h20v20h-20z" />
-                </clipPath>
-              </defs>
-            </svg>
+              </svg>
+            </a>
+          </div>
+          <div className="relative h-5 w-5">
+            <a
+              href="https://twitter.com/homezen_uk"
+              target="_blank"
+              className="group text-white transition-all hover:text-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 20"
+                className="transition-all group-hover:scale-125"
+              >
+                <g clipPath="url(#a)">
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.796 2.5a9.082 9.082 0 0 1-2.617 1.275 3.733 3.733 0 0 0-6.55 2.5v.833a8.883 8.883 0 0 1-7.5-3.775s-3.333 7.5 4.167 10.834a9.7 9.7 0 0 1-5.834 1.666c7.5 4.167 16.667 0 16.667-9.583 0-.232-.023-.464-.067-.692A6.433 6.433 0 0 0 19.796 2.5Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="currentColor" d="M.629 0h20v20h-20z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -193,18 +206,24 @@ const LandingPage = () => {
             </svg>
           </div>
           <div className="relative h-5 w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 21 20"
+            <a
+              href="https://www.facebook.com/HomezenUK"
+              target="_blank"
+              className="group text-white transition-all hover:text-primary"
             >
-              <path
-                stroke="#F4F5F4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.629 1.667h-2.5a4.167 4.167 0 0 0-4.167 4.166v2.5h-2.5v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.334h-3.333v-2.5A.833.833 0 0 1 13.129 5h2.5V1.667Z"
-              />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 21 20"
+              >
+                <path
+                  stroke="#F4F5F4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.629 1.667h-2.5a4.167 4.167 0 0 0-4.167 4.166v2.5h-2.5v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.334h-3.333v-2.5A.833.833 0 0 1 13.129 5h2.5V1.667Z"
+                />
+              </svg>
+            </a>
           </div>
           <div className="relative h-5 w-5">
             <a
