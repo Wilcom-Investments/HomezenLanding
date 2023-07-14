@@ -6,7 +6,10 @@ const Index = () => {
   return (
     <Main
       meta={
-        <Meta title="Homezen App" description="The new best property app" />
+        <Meta
+          title="Sign up for Homezen today"
+          description="The new best property app"
+        />
       }
     >
       <LandingPage />
